@@ -10,31 +10,49 @@ const ImageSlider = () => {
         {
           key: uuidv4(),
           content: (
-            <Card imagen="https://hypergr.am/wp-content/uploads/2022/06/web-design-2.jpg" />
+            <Card imagen="https://i.ibb.co/w0mP8kT/project1.png" />
           )
         },
         {
           key: uuidv4(),
           content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/acf_pro.png" />
+            <Card imagen="https://i.ibb.co/Fqbbb6g/project2.png" />
           )
         },
         {
           key: uuidv4(),
           content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2017/12/layer_slider_plugin_thumb.png" />
+            <Card imagen="https://i.ibb.co/wQJvQwW/project3.png" />
           )
         },
         {
           key: uuidv4(),
           content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2016/08/slider_revolution-1.png" />
+            <Card imagen="https://i.ibb.co/hyMQ1SR/project4.png" />
           )
         },
         {
           key: uuidv4(),
           content: (
-            <Card imagen="https://updates.theme-fusion.com/wp-content/uploads/2019/01/pwa_880_660.jpg" />
+            <Card imagen="https://i.ibb.co/9YJNzqC/project5.png" />
+          )
+        },
+        {
+          key: uuidv4(),
+          content: (
+            <Card imagen="https://i.ibb.co/LJXpP6q/project6.png" />
+          )
+        },
+        {
+          key: uuidv4(),
+          content: (
+            <Card imagen="https://i.ibb.co/9G3LyrC/project7.png" />
+          )
+        },
+        {
+          key: uuidv4(),
+          content: (
+            <Card imagen="https://i.ibb.co/XX7n9YD/project8.png" />
           )
         }
       ];
@@ -73,7 +91,7 @@ const ImageSlider = () => {
     //   ];
 
     return (
-        <div className="">
+        <div className="bg-black">
         <Carousel
           cards={cards}
           height="500px"

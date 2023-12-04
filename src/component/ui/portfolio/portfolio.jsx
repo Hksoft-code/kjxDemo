@@ -2,6 +2,7 @@ import React,{useState,useEffect} from "react"
 import styled from "styled-components"
 import data from "../../../project.json"
 import axios from "axios";
+import ImageSlider from "../services/Components/ProjectSlider";
 
 const Portfolio = () =>{
 
@@ -29,12 +30,13 @@ const Portfolio = () =>{
     return(
         <Section>
             <Wrapper>
-                <Title>Portfolio</Title>
+                
                 <Holder>
                     <Text>
-                        <H1>Our Work</H1>
+                        <H1 className="text-white">Our Work</H1>
                     </Text>
-                    <Cards>
+                    <ImageSlider />
+                    {/* <Cards>
                         <Hold>
                             <Li onClick={()=>{
                                 setSearchTerm("")
@@ -76,7 +78,7 @@ const Portfolio = () =>{
                     </HoldCard>
                             )
                         }
-                    </Cards>
+                    </Cards> */}
                 </Holder>
             </Wrapper>
         </Section>
@@ -191,7 +193,7 @@ const Holder = styled.div`
 const Title = styled.h1`
     font-size:40px;
     margin:0;
-    color:#00640065;
+    color:#fff;
     /* opacity:20%; */
    
     @media (min-width:1024px){
@@ -211,5 +213,6 @@ const Section = styled.section`
     justify-content:center;
     align-items:center;
     padding:20px 0px;
+    background-color:#000;
     color:#006400;
 `
