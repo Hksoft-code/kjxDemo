@@ -1,40 +1,39 @@
-import React,{useState,useEffect} from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import data from "../../../project.json"
 import axios from "axios";
 import ImageSlider from "../services/Components/ProjectSlider";
+import Dot from "../../../assets/dot-prtrn.png"
 
-const Portfolio = () =>{
+const Portfolio = () => {
 
     const [searchTerm, setSearchTerm] = useState('');
     const [filteredData, setFilteredData] = useState([]);
     const [data, setData] = useState([]);
-    const [loading,setLoading] = useState(true)
-  
-    useEffect(()=>{
-        
-        axios.get("http://localhost:4567/api/v2/all-job").then((res)=>{
+    const [loading, setLoading] = useState(true)
+
+    useEffect(() => {
+
+        axios.get("http://localhost:4567/api/v2/all-job").then((res) => {
             setData(res.data.jobsWithBase64Images)
             setLoading(false);
             const filteredResults = data.filter(item =>
                 item.project.includes(searchTerm)
             );
             setFilteredData(filteredResults);
-        }).catch((error)=>{
+        }).catch((error) => {
             console.log(error)
             setLoading(true);
         })
-    },[])
+    }, [])
 
 
-    return(
-        <Section>
+    return (
+        <Section className="bg-gradient-to-r from-violet-500 to-fuchsia-500">
             <Wrapper>
-                
+                <Image src={Dot} alt="dot-prtrn" />
                 <Holder>
-                    <Text>
-                        <H1 className="text-white">Our Work</H1>
-                    </Text>
+
                     <ImageSlider />
                     {/* <Cards>
                         <Hold>
@@ -150,6 +149,16 @@ const Li = styled.div`
     border-radius: 50px;
     border:1px solid lightgrey;
 `
+const Image = styled.img`
+    width:400px;
+    height:400px;
+    position: absolute;
+    object-fit: cover;
+    opacity:10%;
+
+    left: 20px;
+    transform: rotate(45deg);
+`
 
 const Hold = styled.div`
     width:100%;
@@ -213,6 +222,6 @@ const Section = styled.section`
     justify-content:center;
     align-items:center;
     padding:20px 0px;
-    background-color:#000;
+    
     color:#006400;
 `

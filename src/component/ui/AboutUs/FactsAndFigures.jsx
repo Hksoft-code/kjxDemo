@@ -1,58 +1,58 @@
 import React from 'react'
 import styled from 'styled-components'
 import img from "../../../assets/digital-marketing-1433427_1280.jpg"
-import {BsPerson} from "react-icons/bs"
-import {HiOutlineStar} from "react-icons/hi"
-import {TbBrandGoogleAnalytics} from "react-icons/tb"
-import {BsCupHot} from "react-icons/bs"
+import { BsPerson } from "react-icons/bs"
+import { HiOutlineStar } from "react-icons/hi"
+import { TbBrandGoogleAnalytics } from "react-icons/tb"
+import { BsCupHot } from "react-icons/bs"
 
 const FactsAndFigures = () => {
   return (
-        <Container >
-        <Wrapper>
-          <WrapText>
-            <BigText>Facts & <span class ="target">Figures</span> </BigText>
-            <SmallText>Client’s Based On <span class = "target">Trust</span>  <br /> And <span class = "target">Value</span> Since Inception!</SmallText>
-          </WrapText>
-          <Holder>
-            <IconsHold>
-              <Icon1>
-                <BsPerson/>
-                </Icon1>
-              <Down>
-                <Number>450</Number>
-                <Desc>Happy Clients</Desc>
-              </Down>
-            </IconsHold>
-            <IconsHold>
-              <Icon2>
-                <HiOutlineStar/>
-              </Icon2>
-              <Down>
-                <Number>500+</Number>
-                <Desc>Project Completed</Desc>
-              </Down>
-            </IconsHold>
+    <Container >
+      <Wrapper>
+        <WrapText>
+          <BigText>Facts & <span class="target">Figures</span> </BigText>
+          <SmallText>Client’s Based On <span class="target">Trust</span>  <br /> And <span class="target">Value</span> Since Inception!</SmallText>
+        </WrapText>
+        <Holder>
+          <IconsHold>
+            <Icon1>
+              <BsPerson />
+            </Icon1>
+            <Down>
+              <Number>45+</Number>
+              <Desc>Happy Clients</Desc>
+            </Down>
+          </IconsHold>
+          <IconsHold>
+            <Icon2>
+              <HiOutlineStar />
+            </Icon2>
+            <Down>
+              <Number>50+</Number>
+              <Desc>Project Completed</Desc>
+            </Down>
+          </IconsHold>
           <IconsHold>
             <Icon3>
-              <TbBrandGoogleAnalytics/>
+              <TbBrandGoogleAnalytics />
             </Icon3>
             <Down>
-              <Number>5+</Number>
+              <Number>2+</Number>
               <Desc>Years in Business</Desc>
             </Down>
           </IconsHold>
           <IconsHold>
             <Icon4>
-              <BsCupHot/>
+              <BsCupHot />
             </Icon4>
             <Down>
-              <Number>470</Number>
+              <Number>55</Number>
               <Desc>Cups of Coffee</Desc>
             </Down>
           </IconsHold>
-          </Holder>
-        </Wrapper>
+        </Holder>
+      </Wrapper>
     </Container>
   )
 }

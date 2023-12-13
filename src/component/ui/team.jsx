@@ -1,47 +1,47 @@
 import styled from "styled-components"
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import Dot from "../../assets/dot-prtrn.png"
 import { useState } from "react"
 
-const Team = ({text,disc,bt,fun,to}) => {
+const Team = ({ text, disc, bt, fun, to }) => {
 
     const [loading, setLoading] = useState(false)
 
-  const handleSubmit = async (e) => {
-    setLoading(true)
-    e.preventDefault()
-    // await axios.post("http://localhost:4567/api/v2/contact", formData)
-    //     .then((response) => {
-    //         console.log(response)
-    //     }).catch((error) => {
-    //         console.log(error.message)
-    //     }).finally(() => {
-    //         setLoading(false)
-    //     })
-    let number = 7488325096;
-    let url = `https://wa.me/9661087999`;
-    // Appending the message to the URL by encoding it
-    // url += `&text='Hello'`;
-    window.open(url);
+    const handleSubmit = async (e) => {
+        setLoading(true)
+        e.preventDefault()
+        // await axios.post("http://localhost:4567/api/v2/contact", formData)
+        //     .then((response) => {
+        //         console.log(response)
+        //     }).catch((error) => {
+        //         console.log(error.message)
+        //     }).finally(() => {
+        //         setLoading(false)
+        //     })
+        let number = 7488325096;
+        let url = `https://wa.me/9661087999`;
+        // Appending the message to the URL by encoding it
+        // url += `&text='Hello'`;
+        window.open(url);
 
 
-  }
-  return (
-    <Section>
-        <Image src={Dot} alt="dot-prtrn"/>
-        <Wrapper>
-            <Cicrcle/>
-            <Text>
-                <H1>{text}</H1>
-                <P>{disc}</P>
-            </Text>
-            <CicrcleTwo/>
-            <Button onClick={handleSubmit} to={to} >{bt}</Button>
-        </Wrapper>
-            <ImageTwo src={Dot} alt="dot-prtrn"/>
-    </Section>
-  )
+    }
+    return (
+        <Section className="bg-gradient-to-r from-violet-500 to-fuchsia-500">
+            <Image src={Dot} alt="dot-prtrn" />
+            <Wrapper>
+                <Cicrcle className="bg-fuchsia-200" />
+                <Text>
+                    <H1>{text}</H1>
+                    <P>{disc}</P>
+                </Text>
+                <CicrcleTwo className="bg-violet-100" />
+                <Button className="bg-gradient-to-r from-sky-500 to-indigo-500" onClick={handleSubmit} to={to} >{bt}</Button>
+            </Wrapper>
+            <ImageTwo src={Dot} alt="dot-prtrn" />
+        </Section>
+    )
 }
 
 export default Team;
@@ -49,7 +49,6 @@ export default Team;
 const CicrcleTwo = styled.div`
     width:200px;
     height: 200px;
-    background-color: lightgreen;
     border-radius: 50%;
     position: absolute;
     opacity: 10%;
@@ -61,7 +60,7 @@ const CicrcleTwo = styled.div`
 const Cicrcle = styled.div`
     width:200px;
     height: 200px;
-    background-color: lightblue;
+    
     border-radius: 50%;
     position: absolute;
     opacity: 10%;
@@ -102,7 +101,7 @@ const Button = styled(Link)`
     text-decoration:none;
     width:150px;
     height: 50px;
-    background:linear-gradient(110.92deg, #FF900D 8.54%, #F08200 91.46%);
+    
     border-radius: 5px;
     border: none;
     color:#fff;
@@ -162,7 +161,7 @@ const Wrapper = styled.div`
 const Section = styled.section`
     width:100%;
     height: 200px;
-    background-color: #006400;
+    
     display: flex;
     justify-content: center;
     align-items: center;

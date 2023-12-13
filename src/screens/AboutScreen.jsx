@@ -5,16 +5,18 @@ import FactsAndFigures from '../component/ui/AboutUs/FactsAndFigures'
 import KeyValues from '../component/ui/AboutUs/KeyValues'
 import HireDevelopers from '../component/ui/AboutUs/HireDevelopers'
 import JoinUs from '../component/ui/AboutUs/JoinUs'
+import WorkEnvironment from '../component/ui/AboutUs/workEnvironment'
 
 const AboutScreen = () => {
   return (
     <>
-        <AboutHero/>
-        <Welcome/>
-        <FactsAndFigures/>
-        <KeyValues/>
-        <HireDevelopers/>
-        <JoinUs/>
+      <AboutHero />
+      <Welcome />
+      <FactsAndFigures />
+      <KeyValues />
+      <WorkEnvironment />
+      {/* <HireDevelopers/> */}
+      <JoinUs />
     </>
   )
 }

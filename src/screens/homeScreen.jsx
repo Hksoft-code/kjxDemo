@@ -16,26 +16,26 @@ import WatsAppSection from "../component/ui/Watsapp"
 import bckground from '../assets/otherImage/bckground.jpg'
 import styled from "styled-components"
 
-const HomeScreen = () =>{
-    return(
+const HomeScreen = () => {
+    return (
         <>
-            <Hero/>
-            <Platform span="Platforms We Work With"/>
+            <Hero />
+            <Platform span="Platforms We Work With" />
             {/* <Latest/> */}
-            <Service/>
-            <Industries/>
-            <Why_Choose_Us/>
-            <Solution/>
+            <Service />
+            <Industries />
+            <Why_Choose_Us />
+            {/* <Solution/> */}
             {/* <Brands/> */}
             {/* <Health/>
             <Pattner/> */}
             {/* <Contact/> */}
-           
+
             {/* <ContactSection />
             <WatsAppSection /> */}
-            
-           
-            <Impression text="Impressions" subtext="Our Global Impression"/>
+
+
+            <Impression text="Impressions" subtext="Our Global Impression" />
             {/* <Testimonials/> */}
         </>
     )

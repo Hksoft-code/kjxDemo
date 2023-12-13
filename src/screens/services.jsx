@@ -7,15 +7,15 @@ import OurServices from "../component/ui/services/ourServices"
 import services from '../assets/services.png'
 
 
-const Services = () =>{
-    return(
+const Services = () => {
+    return (
         <>
-            <HeroPage img={services} c=" Responsive Web Design " h="Next Gen" br="Beside Professional Excellence!" p="We strive to provide elegant solutions built on proven methodologies. Kjxsoftech technologies partner with clients to design and develop the preeminent creative solutions on numerous reliable platforms."/>
-            <Platforms span="Common Platforms"/>
-            <OurServices/>
-            <Process/>
-            <MoreServices/>
-            <Team text="Want to Hire UI/UX Expert?" disc="We create smarter apps for smarter businesses." bt="Hire Now!"/>
+            <HeroPage img={services} c=" Responsive Web Design " h="Next Gen" br="Beside Professional Excellence!" p="We strive to provide elegant solutions built on proven methodologies. Kjxsoftech technologies partner with clients to design and develop the preeminent creative solutions on numerous reliable platforms." />
+            <Platforms span="Common Platforms" />
+            <OurServices />
+            <Process />
+            <MoreServices />
+            <Team text="Hire Us for your Need" disc="We create smarter apps for smarter businesses." bt="Hire Now!" />
         </>
     )
 }

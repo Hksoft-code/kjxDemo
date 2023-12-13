@@ -95,100 +95,100 @@ import Footers from './component/static/footer';
 const App = () => {
   return (
     <Router>
-      <Header/>
+      <Header />
       {/* <AdminHeader/> */}
       <Routes>
-        <Route path="/" exact  element={ <Home />} />
-        <Route path="/*" element={<ErrorPage/>} />
-        <Route path="/careers"  element={<Career />} />
-        <Route path="/hire-developers"  element={<HireDeveloper />} />
-        <Route path="/aboutus"  element={ <AboutScreen/>} />
-        <Route path="/services"  element={<Services/>} />
-        <Route path="/portfolio"  element={<Portfolio/>} />
-        <Route path="/contactus"  element={<ContactPage/>} />
-        <Route path="/hire-developers/django-developers"  element={<Django_developer/>} />
-        <Route path="/hire-developers/hire-azure-services-developers"  element={<Azure_Developers/>} />
-        <Route path="/hire-developers/hire-big-data-developers"  element={<Big_Data_developers/>} />
-        <Route path="/hire-developers/hire-dynamodb-developers"  element={<Dynamo_Developers/>} />
-        <Route path="/hire-developers/hire-cloud-formation-developers"  element={<Cloud_Formations_Developers/>} />
-        <Route path="/hire-developers/hire-laravel-developers"  element={<Laravel_developers/>} />
-        <Route path="/hire-developers/hire-cake-php-js-developers"  element={<Cake_Php_Developers/>} />
-        <Route path="/hire-developers/hire-codeIgniter-developers"  element={<CodeIgniter_Developers/>} />
-        <Route path="/hire-developers/hire-wordpress-developers"  element={<WordPress_Developers/>} />
-        <Route path="/hire-developers/hire-shopify-developers"  element={<Shopify_Developers/>} />
-        <Route path="/hire-developers/hire-seo-expert"  element={<SEO_Experts_Developers/>} />
-        <Route path="/hire-developers/hire-smo-expert"  element={<SMO_Experts_Developers/>} />
-        <Route path="/hire-developers/hire-ppc-expert"  element={<PPC_Expert/>} />
-        <Route path="/hire-developers/hire-orm-expert"  element={<ORM_Experts/>} />
-        <Route path="/hire-developers/hire-flask-developers"  element={<Flask_developers/>} />
-        <Route path="/hire-developers/hire-fast-api-developers"  element={<Fast_api_developers/> } />
-        <Route path="/hire-developers/hire-kafka-developers"  element={ <Kafka_developers/>} />
-        <Route path="/hire-developers/hire-grafana-developers"  element={<Grafana_developers/>} />
-        <Route path="/hire-developers/hire-graphic-designers"  element={<Graphic_Designers_Developers/>} />
-        <Route path="/hire-developers/hire-web-designers"  element={<Web_Developers/>} />
-        <Route path="/hire-developers/hire-manual-qa"  element={<Hire_Manuel_Developers/>} />
-        <Route path="/hire-developers/hire-automated-qa"  element={ <Automation_QA_Developers/>} />
-        <Route path="/hire-developers/hire-chatbot-developers"  element={<ChatBots_Experts_Developers/> } />
-        <Route path="/hire-developers/hire-ml-developers"  element={<Machine_Learning_Developers/>} />
-        <Route path="/hire-developers/hire-tensorflow-developers"  element={<Tensorflow_Developers/>} />
-        <Route path="/hire-developers/hire-ios-developers"  element={<IOS_Developers/>} />
-        <Route path="/hire-developers/hire-android-developers"  element={<Andriod_Developers/>} />
-        <Route path="/hire-developers/hire-react-native-developers"  element={<React_Native_Developers/>} />
-        <Route path="/hire-developers/hire-react-js-developers"  element={<React_JS_Developers/>} />
-        <Route path="/hire-developers/hire-vue-js-developers"  element={<Vue_JS_Developers/>} />
-        <Route path="/hire-developers/hire-angular-developers"  element={<Angular_Js_Developers/>} />
-        <Route path="/hire-developers/hire-node-js-developers"  element={<Node_Js_Developers/>} />
-        <Route path="/hire-developers/hire-aws-developers"  element={ <AWS_Developers/>} />
-        <Route path="/work-environments"  element={ <WorkEnvironmentScreen/>} />
-        <Route path="/services/django-development"  element={<Django_Development/>} />
-        <Route path="/services/python-frameworks/flask"  element={<Flask_Developement/>} />
-        <Route path="/services/python-frameworks/fastapi"  element={<Fast_Api_Developement/>} />
-        <Route path="/services/python-frameworks/kafka"  element={<Kafka_Development/>} />
-        <Route path="/services/python-frameworks/grafana"  element={<Grafana_Development/> } />
-        <Route path="/services/api-integration-services/payment-api"  element={<Payment_Api/>} />
-        <Route path="/services/api-integration-services/shipping-api"  element={<Shipping_Api/>} />
-        <Route path="/services/api-integration-services/authentication-api"  element={<Authentication_Api/>} />
-        <Route path="/services/api-integration-services/phone-verification-api"  element={<Phone_verication_Api/>} />
-        <Route path="/services/mvc-frameworks/react-js"  element={ <React_Js_Development/>} />
-        <Route path="/services/mvc-frameworks/vue-js"  element={ <Vue_Js_Developement/>} />
-        <Route path="/services/mvc-frameworks/angular-js"  element={<Angular_Js_Development/> } />
-        <Route path="/services/mvc-frameworks/node-js"  element={<Node_Js_Development/>} />
-        <Route path="/services/ai-ml/chatbot"  element={<ChatBots/>} />
-        <Route path="/services/ai-ml/machine-learning"  element={ <Machine_Learning/>} />
-        <Route path="/services/ai-ml/tensorflow"  element={<TensorFlow_Development/>} />
-        <Route path="/services/php-frameworks/laravel-development"  element={<Laravel_Development/>} />
-        <Route path="/services/php-frameworks/cake-php-framework"  element={<Cake_Php_Development/> } />
-        <Route path="/services/php-frameworks/codigniter-development"  element={<Codigniter_Development/>} />
-        <Route path="/services/php-frameworks/wordpress-development"  element={<WordPress_Development/>} />
-        <Route path="/services/php-frameworks/shopify-development"  element={<Shopify_Development/>} />
-        <Route path="/services/mobile-app-development/ios-application"  element={<IOS_Development/>} />
-        <Route path="/services/mobile-app-development/android-application"  element={ <Andriod_Development/>} />
-        <Route path="/services/mobile-app-development/react-native-application"  element={<React_Native_Development/>} />
-        <Route path="/services/designing-services/psd-html-design-services"  element={<PSD_to_HTML_Design/>} />
-        <Route path="/services/designing-services/responsive-website-design"  element={ <Responsive_Website_Design/>} />
-        <Route path="/services/designing-services/mobile-application-design"  element={<Mobile_Development/>} />
-        <Route path="/services/designing-services/design-prototype"  element={<Design_Prototye/>} />
-        <Route path="/services/digital-marketing/seo"  element={<SEO_Development/>} />
-        <Route path="/services/digital-marketing/smo"  element={<SMO_Services_Development/>} />
-        <Route path="/services/digital-marketing/orm"  element={<ORM_Services_Development/>} />
-        <Route path="/services/digital-marketing/ppc"  element={<PPC_Development/>} />
-        <Route path="/service_details"  element={< Service_Details/>} />
-        <Route path="/benefits"  element={<Benefits/>} />
-        <Route path="/careerform/:applyID/:apply" element = {<CareerForm/>}/>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/*" element={<ErrorPage />} />
+        <Route path="/careers" element={<Career />} />
+        <Route path="/hire-developers" element={<HireDeveloper />} />
+        <Route path="/aboutus" element={<AboutScreen />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/contactus" element={<ContactPage />} />
+        <Route path="/hire-developers/django-developers" element={<Django_developer />} />
+        <Route path="/hire-developers/hire-azure-services-developers" element={<Azure_Developers />} />
+        <Route path="/hire-developers/hire-big-data-developers" element={<Big_Data_developers />} />
+        <Route path="/hire-developers/hire-dynamodb-developers" element={<Dynamo_Developers />} />
+        <Route path="/hire-developers/hire-cloud-formation-developers" element={<Cloud_Formations_Developers />} />
+        <Route path="/hire-developers/hire-laravel-developers" element={<Laravel_developers />} />
+        <Route path="/hire-developers/hire-cake-php-js-developers" element={<Cake_Php_Developers />} />
+        <Route path="/hire-developers/hire-codeIgniter-developers" element={<CodeIgniter_Developers />} />
+        <Route path="/hire-developers/hire-wordpress-developers" element={<WordPress_Developers />} />
+        <Route path="/hire-developers/hire-shopify-developers" element={<Shopify_Developers />} />
+        <Route path="/hire-developers/hire-seo-expert" element={<SEO_Experts_Developers />} />
+        <Route path="/hire-developers/hire-smo-expert" element={<SMO_Experts_Developers />} />
+        <Route path="/hire-developers/hire-ppc-expert" element={<PPC_Expert />} />
+        <Route path="/hire-developers/hire-orm-expert" element={<ORM_Experts />} />
+        <Route path="/hire-developers/hire-flask-developers" element={<Flask_developers />} />
+        <Route path="/hire-developers/hire-fast-api-developers" element={<Fast_api_developers />} />
+        <Route path="/hire-developers/hire-kafka-developers" element={<Kafka_developers />} />
+        <Route path="/hire-developers/hire-grafana-developers" element={<Grafana_developers />} />
+        <Route path="/hire-developers/hire-graphic-designers" element={<Graphic_Designers_Developers />} />
+        <Route path="/hire-developers/hire-web-designers" element={<Web_Developers />} />
+        <Route path="/hire-developers/hire-manual-qa" element={<Hire_Manuel_Developers />} />
+        <Route path="/hire-developers/hire-automated-qa" element={<Automation_QA_Developers />} />
+        <Route path="/hire-developers/hire-chatbot-developers" element={<ChatBots_Experts_Developers />} />
+        <Route path="/hire-developers/hire-ml-developers" element={<Machine_Learning_Developers />} />
+        <Route path="/hire-developers/hire-tensorflow-developers" element={<Tensorflow_Developers />} />
+        <Route path="/hire-developers/hire-ios-developers" element={<IOS_Developers />} />
+        <Route path="/hire-developers/hire-android-developers" element={<Andriod_Developers />} />
+        <Route path="/hire-developers/hire-react-native-developers" element={<React_Native_Developers />} />
+        <Route path="/hire-developers/hire-react-js-developers" element={<React_JS_Developers />} />
+        <Route path="/hire-developers/hire-vue-js-developers" element={<Vue_JS_Developers />} />
+        <Route path="/hire-developers/hire-angular-developers" element={<Angular_Js_Developers />} />
+        <Route path="/hire-developers/hire-node-js-developers" element={<Node_Js_Developers />} />
+        <Route path="/hire-developers/hire-aws-developers" element={<AWS_Developers />} />
+        <Route path="/work-environments" element={<WorkEnvironmentScreen />} />
+        <Route path="/services/django-development" element={<Django_Development />} />
+        <Route path="/services/python-frameworks/flask" element={<Flask_Developement />} />
+        <Route path="/services/python-frameworks/fastapi" element={<Fast_Api_Developement />} />
+        <Route path="/services/python-frameworks/kafka" element={<Kafka_Development />} />
+        <Route path="/services/python-frameworks/grafana" element={<Grafana_Development />} />
+        <Route path="/services/api-integration-services/payment-api" element={<Payment_Api />} />
+        <Route path="/services/api-integration-services/shipping-api" element={<Shipping_Api />} />
+        <Route path="/services/api-integration-services/authentication-api" element={<Authentication_Api />} />
+        <Route path="/services/api-integration-services/phone-verification-api" element={<Phone_verication_Api />} />
+        <Route path="/services/mvc-frameworks/react-js" element={<React_Js_Development />} />
+        <Route path="/services/mvc-frameworks/vue-js" element={<Vue_Js_Developement />} />
+        <Route path="/services/mvc-frameworks/angular-js" element={<Angular_Js_Development />} />
+        <Route path="/services/mvc-frameworks/node-js" element={<Node_Js_Development />} />
+        <Route path="/services/ai-ml/chatbot" element={<ChatBots />} />
+        <Route path="/services/ai-ml/machine-learning" element={<Machine_Learning />} />
+        <Route path="/services/ai-ml/tensorflow" element={<TensorFlow_Development />} />
+        <Route path="/services/php-frameworks/laravel-development" element={<Laravel_Development />} />
+        <Route path="/services/php-frameworks/cake-php-framework" element={<Cake_Php_Development />} />
+        <Route path="/services/php-frameworks/codigniter-development" element={<Codigniter_Development />} />
+        <Route path="/services/php-frameworks/wordpress-development" element={<WordPress_Development />} />
+        <Route path="/services/php-frameworks/shopify-development" element={<Shopify_Development />} />
+        <Route path="/services/mobile-app-development/ios-application" element={<IOS_Development />} />
+        <Route path="/services/mobile-app-development/android-application" element={<Andriod_Development />} />
+        <Route path="/services/mobile-app-development/react-native-application" element={<React_Native_Development />} />
+        <Route path="/services/designing-services/psd-html-design-services" element={<PSD_to_HTML_Design />} />
+        <Route path="/services/designing-services/responsive-website-design" element={<Responsive_Website_Design />} />
+        <Route path="/services/designing-services/mobile-application-design" element={<Mobile_Development />} />
+        <Route path="/services/designing-services/design-prototype" element={<Design_Prototye />} />
+        <Route path="/services/digital-marketing/seo" element={<SEO_Development />} />
+        <Route path="/services/digital-marketing/smo" element={<SMO_Services_Development />} />
+        <Route path="/services/digital-marketing/orm" element={<ORM_Services_Development />} />
+        <Route path="/services/digital-marketing/ppc" element={<PPC_Development />} />
+        <Route path="/service_details" element={< Service_Details />} />
+        <Route path="/benefits" element={<Benefits />} />
+        <Route path="/careerform/:applyID/:apply" element={<CareerForm />} />
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=login" element={<LoginAdmin />} />
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=signup" element={<SignupAdmin />} />
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=admin-upload-job" element={<JobOfferForm />} />
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=admin-upload-job-done" element={<WorkDoneForm />} />
         <Route path="/=kjxsofttechb-dhdh652hdsn=admin" element={
           <PrivateRoute>
-            <AdminScreen/>
+            <AdminScreen />
           </PrivateRoute>
         } />
       </Routes>
 
-      <Footers />
+      <FooterSection />
       <CopyrightPage />
-      
+
     </Router>
   );
 };

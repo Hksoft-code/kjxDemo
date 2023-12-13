@@ -8,11 +8,11 @@ import Mission from '../component/ui/WorkEnvironment/mission'
 const WorkEnvironmentScreen = () => {
   return (
     <>
-            <WorkHero/>
-            {/* <Ambience/> */}
-            {/* <Pictures/> */}
-            {/* <TheMost/> */}
-            <Mission/>
+      <WorkHero />
+      {/* <Ambience /> */}
+      {/* <Pictures /> */}
+      {/* <TheMost /> */}
+      <Mission />
     </>
   )
 }

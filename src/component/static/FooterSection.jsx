@@ -14,27 +14,18 @@ import footer from '../../assets/otherImage/footer-corner.png'
 
 const FooterSection = () => {
     return (
-        <div class="bg-white -mt-10 bg-gradient-to-b from-emerald-200 to-emerald-100">
+        <div class="bg-white -mt-10 bg-gradient-to-t from-teal-700 to-emerald-100">
             <div class="mx-auto max-w-7xl px-2 lg:px-2">
                 <div class="mx-auto mt-16 max-w-2xl  sm:mt-20 lg:mx-0 lg:flex lg:max-w-none">
-                    <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
-                        <div class="text-center  lg:flex lg:flex-col lg:justify-center lg:py-16">
-                            <div class="mx-auto max-w-lg px-8">
-                                <img src={logo} />
 
-                                <p class="mt-6 text-lg leading-5 text-gray-600">We Believe In Maximizing The Output</p>
-                            </div>
-                        </div>
-                    </div>
-                    
                     <div class="p-8 sm:p-10 lg:flex-auto ">
                         <h3 class="text-2xl font-bold tracking-tight text-gray-900 ">Contact Us</h3>
-                        <div class="mt-10 flex items-center gap-x-4">
+                        <div class="mt-10 flex  gap-x-4">
                             <div class="h-px flex-auto bg-gray-100"></div>
                         </div>
-                        <ul role="list" class=" text-right mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                        <ul role="list" class=" mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
                             <Div>
-                                <Holder className="item-end">
+                                <Holder >
                                     <Icon>
                                         <FaLocationDot />
                                     </Icon>
@@ -62,12 +53,21 @@ const FooterSection = () => {
                                                 <Icons src={indian} alt="flag" />
                                                 INDIA :
                                             </P>
-                                            <Span>(+91) 9661087999 </Span>
+                                            <Span >(+91) 9661087999 </Span>
                                         </HolderTwo>
                                     </Hold>
                                 </Holders>
                             </Div>
                         </ul>
+                    </div>
+                    <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
+                        <div class="text-center  lg:flex lg:flex-col lg:justify-center lg:py-16">
+                            <div class="mx-auto max-w-lg px-8">
+                                <img src={logo} />
+
+                                <p class="mt-6 text-lg leading-5 text-white">We Believe In Maximizing The Output</p>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -81,7 +81,7 @@ export default FooterSection;
 
 const P = styled.p`
     margin:0;
-    color:#000;
+    color:#fff;
     display:flex;
     img {
         border-radius: 30%; }
@@ -128,7 +128,7 @@ const Holder = styled.div`
     width:100%;
     margin:20px 0px;
     display: flex;
-    justify-content: right;
+    justify-content: start;
 `
 
 const Div = styled.div`
@@ -140,7 +140,7 @@ const Li = styled(Link)`
     font-size: 15px;
     cursor: pointer;
     /* margin:0px 20px; */
-    color:#000;
+    color:#fff;
     text-decoration:none;
     transition:all 500ms;
 `
@@ -155,7 +155,7 @@ const Line = styled.div`
 const H1 = styled.h1`
     margin:0;
     font-size: 20px;
-    color:#000;
+    color:#fff;
 `
 
 const Title = styled.div`
@@ -178,14 +178,14 @@ const Ul = styled.div`
 
 const Spans = styled.span`
     width:80%;
-    color:#000;
+    color:#fff;
     font-size: 16px;
 `
 
 const Span = styled.span`
     margin:10px 0px;
     width:70%;
-    color:#000;
+    color:#fff;
     word-spacing:5px;
     font-size: 16px;
     display: flex;
