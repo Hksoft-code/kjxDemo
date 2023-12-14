@@ -36,7 +36,7 @@ const HomeScreen = () => {
             <WatsAppSection /> */}
 
 
-            <Impression text="Impressions" subtext="Our Global Impression" />
+            {/* <Impression text="Impressions" subtext="Our Global Impression" /> */}
             {/* <Testimonials/> */}
             <FooterSection />
         </>
