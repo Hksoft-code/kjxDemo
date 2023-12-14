@@ -20,10 +20,10 @@ const FooterSection = () => {
 
                     <div class="p-8 sm:p-10 lg:flex-auto ">
                         <h3 class="text-2xl font-bold tracking-tight text-gray-900 ">Contact Us</h3>
-                        <div class="mt-10 flex  gap-x-4">
+                        <div class="flex  gap-x-4 ">
                             <div class="h-px flex-auto bg-gray-100"></div>
                         </div>
-                        <ul role="list" class=" mt-8 grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
+                        <ul role="list" class=" grid grid-cols-1 gap-4 text-sm leading-6 text-gray-600 sm:grid-cols-2 sm:gap-6">
                             <Div>
                                 <Holder >
                                     <Icon>
@@ -31,13 +31,13 @@ const FooterSection = () => {
                                     </Icon>
                                     <Spans> KANTI SADAN , KURTHAUL BAGICHA , KURTHAUL PATNA-804453</Spans>
                                 </Holder>
-                                <Holder>
+                                <Holder className="mt-1">
                                     <Icon>
                                         <FaLocationDot />
                                     </Icon>
                                     <Spans> JAGATSINGHPUR , ODISHA , 754103</Spans>
                                 </Holder>
-                                <Holder>
+                                <Holder className="mt-1">
                                     <Icon>
                                         <HiMail />
                                     </Icon>
@@ -65,7 +65,7 @@ const FooterSection = () => {
                             <div class="mx-auto max-w-lg px-8">
                                 <img src={logo} />
 
-                                <p class="mt-6 text-lg leading-5 text-white">We Believe In Maximizing The Output</p>
+                                <p class="mt-1 text-lg leading-5 text-white">We Believe In Maximizing The Output</p>
                             </div>
                         </div>
                     </div>
@@ -88,6 +88,7 @@ const P = styled.p`
 `
 
 const HolderTwo = styled.div`
+    margin-top:-5px;
     margin-bottom: 20px;
 `
 
@@ -126,7 +127,7 @@ const Hold = styled.div`
 
 const Holder = styled.div`
     width:100%;
-    margin:20px 0px;
+    
     display: flex;
     justify-content: start;
 `

@@ -89,6 +89,7 @@ import { Copyright } from '@mui/icons-material';
 import CopyrightPage from './component/static/CopyRightPage';
 import FooterSection from './component/static/FooterSection';
 import Footers from './component/static/footer';
+import ContactForm from './component/ui/Contact/contactForm';
 
 
 
@@ -100,6 +101,7 @@ const App = () => {
       <Routes>
         <Route path="/" exact element={<Home />} />
         <Route path="/*" element={<ErrorPage />} />
+        <Route path="/ContactForm" element={<ContactForm />} />
         <Route path="/careers" element={<Career />} />
         <Route path="/hire-developers" element={<HireDeveloper />} />
         <Route path="/aboutus" element={<AboutScreen />} />
@@ -178,6 +180,7 @@ const App = () => {
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=login" element={<LoginAdmin />} />
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=signup" element={<SignupAdmin />} />
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=admin-upload-job" element={<JobOfferForm />} />
+
         <Route path="/=kjxsofttechbdhd-h652hdsnadmin=admin-upload-job-done" element={<WorkDoneForm />} />
         <Route path="/=kjxsofttechb-dhdh652hdsn=admin" element={
           <PrivateRoute>
@@ -186,7 +189,7 @@ const App = () => {
         } />
       </Routes>
 
-      <FooterSection />
+    
       <CopyrightPage />
 
     </Router>

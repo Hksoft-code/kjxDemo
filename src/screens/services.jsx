@@ -15,7 +15,7 @@ const Services = () => {
             <OurServices />
             <Process />
             <MoreServices />
-            <Team text="Hire Us for your Need" disc="We create smarter apps for smarter businesses." bt="Hire Now!" />
+            <Team text="Hire Us for your Need" disc="We create smarter solution for smarter businesses." bt="Hire Now!" />
         </>
     )
 }

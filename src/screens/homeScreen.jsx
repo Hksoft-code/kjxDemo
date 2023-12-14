@@ -15,6 +15,7 @@ import ContactSection from "../component/ui/contact1"
 import WatsAppSection from "../component/ui/Watsapp"
 import bckground from '../assets/otherImage/bckground.jpg'
 import styled from "styled-components"
+import FooterSection from "../component/static/FooterSection"
 
 const HomeScreen = () => {
     return (
@@ -37,6 +38,7 @@ const HomeScreen = () => {
 
             <Impression text="Impressions" subtext="Our Global Impression" />
             {/* <Testimonials/> */}
+            <FooterSection />
         </>
     )
 }

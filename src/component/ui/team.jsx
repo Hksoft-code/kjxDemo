@@ -1,29 +1,32 @@
 import styled from "styled-components"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 
 import Dot from "../../assets/dot-prtrn.png"
 import { useState } from "react"
 
 const Team = ({ text, disc, bt, fun, to }) => {
 
+    const navigate = useNavigate();
+
     const [loading, setLoading] = useState(false)
 
     const handleSubmit = async (e) => {
         setLoading(true)
-        e.preventDefault()
-        // await axios.post("http://localhost:4567/api/v2/contact", formData)
-        //     .then((response) => {
-        //         console.log(response)
-        //     }).catch((error) => {
-        //         console.log(error.message)
-        //     }).finally(() => {
-        //         setLoading(false)
-        //     })
-        let number = 7488325096;
-        let url = `https://wa.me/9661087999`;
-        // Appending the message to the URL by encoding it
-        // url += `&text='Hello'`;
-        window.open(url);
+       
+        // e.preventDefault()
+        // // await axios.post("http://localhost:4567/api/v2/contact", formData)
+        // //     .then((response) => {
+        // //         console.log(response)
+        // //     }).catch((error) => {
+        // //         console.log(error.message)
+        // //     }).finally(() => {
+        // //         setLoading(false)
+        // //     })
+        // let number = 7488325096;
+        // let url = `https://wa.me/9661087999`;
+        // // Appending the message to the URL by encoding it
+        // // url += `&text='Hello'`;
+        // window.open(url);
 
 
     }
@@ -37,7 +40,10 @@ const Team = ({ text, disc, bt, fun, to }) => {
                     <P>{disc}</P>
                 </Text>
                 <CicrcleTwo className="bg-violet-100" />
-                <Button className="bg-gradient-to-r from-sky-500 to-indigo-500" onClick={handleSubmit} to={to} >{bt}</Button>
+                <Link to={"/ContactForm"} >
+                <Button  className="bg-gradient-to-r from-sky-500 to-indigo-500"  to={to} >{bt}</Button>
+                </Link>
+                
             </Wrapper>
             <ImageTwo src={Dot} alt="dot-prtrn" />
         </Section>
